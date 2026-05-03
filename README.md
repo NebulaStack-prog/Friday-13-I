@@ -2,15 +2,15 @@
 
 Snake game with horror atmosphere and three map sizes. 
 
-## 💻 Run:
+## 💻 Project run:
 - Download [File.exe](File.exe)
   
 - Or run [File.py](File.py)
 
 ## 📄 Full documentation:
-- 🇷🇺  Russian version [Document](README_RU.md)
+- 🇷🇺  Russian version: [Documentation](FrDay13-I_RU.md)
   
-- 🇺🇲  English version: [Document](README_EN.md)
+- 🇺🇲  English version: [Documentation](FrDay13-I_EN.md)
 
 ## 📷 Screenshots:
 ![](screenshot1.png)
