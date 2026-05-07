@@ -3,9 +3,14 @@
 Snake game with horror atmosphere and three map sizes. 
 
 ## 💻 Project run:
-- Download [File.exe](File.exe)
+- Download [Friday13-I.exe](Friday13-I.exe)
   
-- Or run [File.py](File.py)
+- Or run [Friday13-I.py](Friday13-I.py)
+
+## 💾 Code comments:
+- 🇷🇺 Russian version: [Comments](FrDay13-I_com_RU.py)
+  
+- 🇺🇲 English version: [Comments](FrDay13-I_com_EN.py)
 
 ## 📄 Full documentation:
 - 🇷🇺  Russian version: [Documentation](FrDay13-I_RU.md)
