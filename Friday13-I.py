@@ -55,7 +55,7 @@ def show_menu():
                     return levels['2']
                 elif event.key == pygame.K_3:
                     return levels['3']
-                elif event.key == pygame.K_ESC:
+                elif event.key == pygame.K_ESCAPE:
                     pygame.quit()
                     quit()
 
@@ -114,7 +114,7 @@ def game(level):
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_ESC:
+                    if event.key == pygame.K_ESCAPE:
                         game_over = True
                         game_close = False
                     if event.key == pygame.K_r:
