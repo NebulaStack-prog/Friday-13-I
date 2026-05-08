@@ -10,9 +10,9 @@ blood_red = (180, 0, 0)
 grid_gray = (30, 30, 30)
 
 levels = {
-    '1': {'grid_size': 16, 'cell_size': 35, 'speed': 6, 'name': 'Easy'},
-    '2': {'grid_size': 24, 'cell_size': 28, 'speed': 8, 'name': 'Medium'},
-    '3': {'grid_size': 32, 'cell_size': 22, 'speed': 10, 'name': 'Hard'}
+    '1': {'grid_size': 8, 'cell_size': 45, 'speed': 6, 'name': 'Easy'},
+    '2': {'grid_size': 12, 'cell_size': 40, 'speed': 8, 'name': 'Medium'},
+    '3': {'grid_size': 16, 'cell_size': 35, 'speed': 10, 'name': 'Hard'}
 }
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
@@ -32,9 +32,9 @@ def show_menu():
         dis.blit(title, [800 // 2 - title.get_width() // 2, 80])
         dis.blit(subtitle, [800 // 2 - subtitle.get_width() // 2, 140])
 
-        opt1 = font_style.render("1 - Easy (16x16)", True, white)
-        opt2 = font_style.render("2 - Medium (24x24)", True, white)
-        opt3 = font_style.render("3 - Hard (32x32)", True, white)
+        opt1 = font_style.render("1 - Easy (8x8)", True, white)
+        opt2 = font_style.render("2 - Medium (12x12)", True, white)
+        opt3 = font_style.render("3 - Hard (16x16)", True, white)
         opt4 = font_style.render("ESC - Exit (Выход)", True, blood_red)
 
         dis.blit(opt1, [400 - opt1.get_width() // 2, 220])
