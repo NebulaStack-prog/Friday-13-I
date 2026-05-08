@@ -18,6 +18,11 @@ Snake game with horror atmosphere and three map sizes.
 - 🇺🇲  English version: [Documentation](FrDay13-I_EN.md)
 
 ## 📷 Screenshots:
-![](screenshot1.png)
+![](FrDay13_I_1.jpg)
+![](FrDay13_I_2.jpg)
+![](FrDay13_I_3.jpg)
+![](FrDay13_I_4.jpg)
+![](FrDay13_I_5.jpg)
 
+---
 © NebulaStack
