@@ -4,6 +4,7 @@ Snake game with horror atmosphere and three map sizes.
 
 ## 💻 Project Run
 - Open with Python: [Friday13-I.py](Friday13-I.py)
+- Or download exe: [Friday13-I.exe](...)
 
 ## 📄 Full Documentation
 - 🇷🇺  Russian version: [Documentation](FrDay13-I_RU.md)
