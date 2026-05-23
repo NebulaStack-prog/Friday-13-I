@@ -198,9 +198,6 @@ def game(level):
 
 
             else:
-
-                # Создаем поверхность для головы
-
                 head_surface = pygame.Surface((snake_block, snake_block), pygame.SRCALPHA)
 
                 head_surface.fill((0, 0, 0, 0))
