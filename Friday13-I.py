@@ -83,6 +83,7 @@ def game(level):
 
     snake_list = []
     length_of_snake = 1
+    direction = 'RIGHT'
 
     foodx = random.randint(0, grid_size - 1) * cell_size
     foody = random.randint(0, grid_size - 1) * cell_size
@@ -93,7 +94,9 @@ def game(level):
 
     def message(msg, color):
         mesg = font_style.render(msg, True, color)
-        dis.blit(mesg, [dis_width // 6, dis_height // 3])
+        text_x = dis_width // 2 - mesg.get_width() // 2
+        text_y = dis_height // 2 - mesg.get_height() // 2 - 40
+        dis.blit(mesg, [text_x, text_y])
 
     def tourists(x, y):
         center_x = x + cell_size // 2
@@ -109,7 +112,10 @@ def game(level):
         while game_close:
             dis.fill(black)
             message("GAME OVER! ESC - Exit, R - Replay", blood_red)
-            score(length_of_snake - 1)
+            score_text = score_font.render("Victims: " + str(length_of_snake - 1), True, blood_red)
+            score_x = dis_width // 2 - score_text.get_width() // 2
+            score_y = dis_height // 2 + 20
+            dis.blit(score_text, [score_x, score_y])
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -129,15 +135,19 @@ def game(level):
                 if event.key == pygame.K_LEFT and x1_change == 0:
                     x1_change = -snake_block
                     y1_change = 0
+                    direction = "LEFT"
                 elif event.key == pygame.K_RIGHT and x1_change == 0:
                     x1_change = snake_block
                     y1_change = 0
+                    direction = "RIGHT"
                 elif event.key == pygame.K_UP and y1_change == 0:
                     y1_change = -snake_block
                     x1_change = 0
+                    direction = "UP"
                 elif event.key == pygame.K_DOWN and y1_change == 0:
                     y1_change = snake_block
                     x1_change = 0
+                    direction = "DOWN"
                 elif event.key == pygame.K_ESCAPE:
                     new_level = show_menu()
                     game(new_level)
@@ -186,24 +196,47 @@ def game(level):
                 pygame.draw.circle(dis, blood_red, (mid_x - snake_block // 3, mid_y + snake_block // 3), spot_size)
                 pygame.draw.circle(dis, blood_red, (mid_x + snake_block // 3, mid_y + snake_block // 3), spot_size)
 
+
             else:
+
+                # Создаем поверхность для головы
+
+                head_surface = pygame.Surface((snake_block, snake_block), pygame.SRCALPHA)
+
+                head_surface.fill((0, 0, 0, 0))
+                
                 eye_size = max(3, snake_block // 6)
-                left_eye = (x + snake_block // 3, y + snake_block // 3)
-                right_eye = (x + 2 * snake_block // 3, y + snake_block // 3)
+                
+                left_eye = (snake_block // 3, snake_block // 3)
+                
+                right_eye = (2 * snake_block // 3, snake_block // 3)
 
-                pygame.draw.circle(dis, black, left_eye, eye_size)
-                pygame.draw.circle(dis, black, right_eye, eye_size)
-
+                pygame.draw.circle(head_surface, black, left_eye, eye_size)
+                pygame.draw.circle(head_surface, black, right_eye, eye_size)
+                
                 line_thickness = max(2, snake_block // 12)
-                pygame.draw.line(dis, blood_red, (x + snake_block // 6, y + snake_block // 2), (x + snake_block // 3, y + snake_block // 2), line_thickness)  # левая линия
-                pygame.draw.line(dis, blood_red, (x + 2 * snake_block // 3, y + snake_block // 2), (x + 5 * snake_block // 6, y + snake_block // 2), line_thickness)  # правая линия
-
+                
+                pygame.draw.line(head_surface, blood_red, (snake_block // 6, snake_block // 2), (snake_block // 3, snake_block // 2), line_thickness)
+                pygame.draw.line(head_surface, blood_red, (2 * snake_block // 3, snake_block // 2), (5 * snake_block // 6, snake_block // 2), line_thickness)
+                
                 pattern_size = max(1, snake_block // 12)
-                pygame.draw.circle(dis, blood_red, (x + snake_block // 4, y + 2 * snake_block // 3), pattern_size)
-                pygame.draw.circle(dis, blood_red, (x + 3 * snake_block // 4, y + 2 * snake_block // 3), pattern_size)
+                
+                pygame.draw.circle(head_surface, blood_red, (snake_block // 4, 2 * snake_block // 3), pattern_size)
+                pygame.draw.circle(head_surface, blood_red, (3 * snake_block // 4, 2 * snake_block // 3), pattern_size)
+                pygame.draw.line(head_surface, blood_red, (snake_block // 4, snake_block // 6), (3 * snake_block // 4, snake_block // 6), max(2, snake_block // 10))
+                
+                if direction == 'RIGHT':
+                    rotated = pygame.transform.rotate(head_surface, 270)
+                elif direction == 'LEFT':
+                    rotated = pygame.transform.rotate(head_surface, 90)
+                elif direction == 'UP':
+                    rotated = pygame.transform.rotate(head_surface, 0)
+                elif direction == 'DOWN':
+                    rotated = pygame.transform.rotate(head_surface, 180)
+                else:
+                    rotated = head_surface
 
-                pygame.draw.line(dis, blood_red, (x + snake_block // 4, y + snake_block // 6), (x + 3 * snake_block // 4, y + snake_block // 6), max(2, snake_block // 10))
-
+                dis.blit(rotated, (x, y))
         score(length_of_snake - 1)
         pygame.display.update()
 
