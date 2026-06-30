@@ -1,5 +1,7 @@
 # Friday 13 - I
 
+<img src="https://github.com/NebulaStack-prog/Calculator-v.1/raw/main/IMG_20260701_003212_702.jpg" width="200" height="200">
+
 Snake game with horror atmosphere and three map sizes. 
 
 ## 💻 Project Run
