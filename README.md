@@ -5,9 +5,11 @@
 > Snake game with horror atmosphere and three map sizes. 
 
 ## 💻 Project Run
-- Open with Python: [Friday13-I.py](Friday13-I.py)
+- Open with Python: [Friday13-I-New.py](Friday13-I-New.py)
   
 - Or download exe: [Friday13-I.exe](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0)
+
+- Or use old Python code: [Friday13-I.py](Friday13-I.py)
 
 ## 📄 Full Documentation
 - 🇷🇺  Russian version: [Documentation](FrDay13-I_RU.md)
