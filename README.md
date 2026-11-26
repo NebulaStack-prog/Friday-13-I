@@ -13,6 +13,8 @@
 | Platform | Windows / Python |
 | Status | Completed |
 
+> [![CI](https://github.com/NebulaStack-prog/Friday-13-I/actions/workflows/ci.yml/badge.svg)](https://github.com/NebulaStack-prog/Friday-13-I/actions/workflows/ci.yml)
+
 ## 📖 Overview
 
 A horror-themed interpretation of classic Snake. The goal is to fill the board by collecting targets and avoiding collisions.
@@ -43,6 +45,16 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 - Russian documentation: [more...](FrDay13-I_RU.md)
 
 - English documentation: [more...](FrDay13-I_EN.md)
+
+## 🧪 Testing
+
+Automated tests run through GitHub Actions. To run locally with Pygame installed:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Tests cover game logic and record storage without opening a visible window.
 
 ## 📊 Project Status
 
