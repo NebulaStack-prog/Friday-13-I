@@ -34,11 +34,11 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 
 ## 📦 Installation
 
-- Download EXE from [GitHub Releases](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0).
+- Download EXE from [GitHub Releases](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0)
 
-- Or run with Python: [more...](Friday13-I-New.py). 
+- Or run with Python: [more...](Friday13-I-New.py)
 
-- Original source code (Old): [more...](Friday13-I.py).
+- Original source code (Old): [more...](Friday13-I.py)
 
 ## 📄 Documentation
 
