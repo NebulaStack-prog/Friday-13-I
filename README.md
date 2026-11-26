@@ -1,26 +1,63 @@
 # Friday 13 - I
 
-<img src="https://github.com/NebulaStack-prog/Friday-13-I/blob/main/IMG_20260701_012138_850.jpg" width="200" height="230">
+<img src="IMG_20260701_012138_850.jpg" width="200" alt="Friday 13 - I emblem">
 
-> Snake game with horror atmosphere and three map sizes. 
+> Classic Snake with a horror atmosphere and three difficulty levels.
 
-## 💻 Project Run
-- Open with Python: [Friday13-I-New.py](Friday13-I-New.py)
-  
-- Or download exe: [Friday13-I.exe](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0)
+| Project Information | Details |
+|---|---|
+| Project ID | NS-002 |
+| Direction | Games |
+| Development Phase | Phase I |
+| Version | v1.0 |
+| Platform | Windows / Python |
+| Status | Completed |
 
-- Or use old Python code: [Friday13-I.py](Friday13-I.py)
+## 📖 Overview
 
-## 📄 Full Documentation
-- 🇷🇺  Russian version: [Documentation](FrDay13-I_RU.md)
-  
-- 🇺🇲  English version: [Documentation](FrDay13-I_EN.md)
+A horror-themed interpretation of classic Snake. The goal is to fill the board by collecting targets and avoiding collisions.
 
-## 📷 Screenshots:
-![](FrDay13_I_1.jpg)
-![](FrDay13_I_2.jpg)
-![](FrDay13_I_3.jpg)
-![](FrDay13_I_4.jpg)
-![](FrDay13_I_5.jpg)
+## ✨ Features
+
+- Three board sizes: 8×8, 12×12 and 16×16
+- Difficulty-based movement speed
+- Score tracking and level completion records
+- Persistent local records
+
+## 🛠 Technology Stack
+
+- Python
+- Pygame
+- JSON
+
+## 📦 Installation
+
+- Download the Windows executable from [GitHub Releases](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0).
+
+- Or run with Python: [Updated source code](Friday13-I-New.py). Requires Pygame.
+
+- Original source code: [more...](Friday13-I.py).
+
+## 📄 Documentation
+
+- Russian documentation: [more...](FrDay13-I_RU.md)
+
+- English documentation: [more...](FrDay13-I_EN.md)
+
+## 📊 Project Status
+
+A completed NESTIMS Phase I project. Both the original and updated Python implementations are preserved.
+
+## 📷 Screenshots
+
+![Screenshot 1](FrDay13_I_1.jpg)
+
+![Screenshot 2](FrDay13_I_2.jpg)
+
+![Screenshot 3](FrDay13_I_3.jpg)
+
+![Screenshot 4](FrDay13_I_4.jpg)
+
+![Screenshot 5](FrDay13_I_5.jpg)
 
 © NESTIMS
