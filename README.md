@@ -9,7 +9,7 @@
 | Project ID | NS-002 |
 | Direction | Games |
 | Development Phase | Phase I |
-| Version | v1.0 |
+| Version | v1.1 |
 | Platform | Windows / Python |
 | Status | Completed |
 
@@ -34,27 +34,17 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 
 ## 📦 Installation
 
-- Download the Windows executable from [GitHub Releases](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0).
+- Download EXE from [GitHub Releases](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0).
 
-- Or run with Python: [Updated source code](Friday13-I-New.py). Requires Pygame.
+- Or run with Python: [more...](Friday13-I-New.py). 
 
-- Original source code: [more...](Friday13-I.py).
+- Original source code (Old): [more...](Friday13-I.py).
 
 ## 📄 Documentation
 
 - Russian documentation: [more...](FrDay13-I_RU.md)
 
 - English documentation: [more...](FrDay13-I_EN.md)
-
-## 🧪 Testing
-
-Automated tests run through GitHub Actions. To run locally with Pygame installed:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-Tests cover game logic and record storage without opening a visible window.
 
 ## 📊 Project Status
 
