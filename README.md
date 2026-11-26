@@ -22,8 +22,11 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 ## ✨ Features
 
 - Three board sizes: 8×8, 12×12 and 16×16
+  
 - Difficulty-based movement speed
+
 - Score tracking and level completion records
+
 - Persistent local records
 
 ## 🛠 Technology Stack
