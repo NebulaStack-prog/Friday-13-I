@@ -37,7 +37,7 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 
 ## 📦 Installation
 
-- Download the Windows executable from Releases: [more...](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v1.0)
+- Download the Windows executable from Releases: [more...](https://github.com/NebulaStack-prog/Friday-13-I/releases/tag/v2.0)
 
 - Or run with Python latest version of code: [more...](Friday13-I-New.py)
 
