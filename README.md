@@ -43,7 +43,7 @@ A horror-themed interpretation of classic Snake. The goal is to fill the board b
 
 - Original source code (Old): [more...](Friday13-I.py)
 
-## 📄 Documentation
+## 📄 Documentation (For old code)
 
 - Russian documentation: [more...](FrDay13-I_RU.md)
 
